@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     )) as 0 | 1;
 
     if (isAlreadyAdded) {
-      return new Response("You cannot add yourself as friend!", {
+      return new Response("Already your friend!", {
         status: 400,
       });
     }
